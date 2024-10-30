@@ -1,52 +1,58 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-
-const Login = ({ onLoginSuccess }) => {
+const Login = ({ onLoginSuccess, onToggleRegister }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    
-    // Verifica se existe um usuário com o nome de usuário e senha fornecidos
-    const userExists = pessoa.usuarios.some(
+
+    const existingUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    const userExists = existingUsers.some(
       (user) => user.usuario === username && user.senha === password
     );
 
     if (userExists) {
       setErrorMessage('');
-      onLoginSuccess();  // Chama a função onLoginSuccess passada como prop
+      onLoginSuccess();
+      navigate('/bem-vindo');
     } else {
       setErrorMessage('Usuário ou senha inválidos');
     }
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Usuário:</label>
+    <div className="container">
+      <div className="inicio">
+        <h2>Login</h2>
+        <form onSubmit={handleLogin}>
           <input
             type="text"
+            className="input"
+            placeholder="Usuário"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
-        </div>
-        <div>
-          <label>Senha:</label>
           <input
             type="password"
+            className="input"
+            placeholder="Senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-        </div>
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-        <button type="submit">Entrar</button>
-      </form>
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+          <button type="submit" className="start-button">Entrar</button>
+        </form>
+        <button onClick={onToggleRegister} className="register-button">
+          Cadastrar-se
+        </button>
+      </div>
     </div>
   );
 };
