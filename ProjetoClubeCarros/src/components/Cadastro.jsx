@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Cadastro = () => {
+const Cadastro = ({ onToggleRegister }) => {
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -53,58 +53,58 @@ const Cadastro = () => {
   };
 
   return (
-    <div className="cadastro-container">
-      <h2>Cadastro</h2>
-      <form onSubmit={handleRegister}>
-        <div>
-          <label>Nome:</label>
+    <div className="container">
+      <div className="inicio">
+        <h2>Cadastro</h2>
+        <form onSubmit={handleRegister}>
           <input
             type="text"
+            className="input"
+            placeholder="Nome"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
-        </div>
-        <div>
-          <label>Usuário:</label>
           <input
             type="text"
+            className="input"
+            placeholder="Usuário"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
-        </div>
-        <div>
-          <label>Senha:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Confirme a Senha:</label>
-          <input
-            type="password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Email:</label>
           <input
             type="email"
+            className="input"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </div>
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-        {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
-        <button type="submit">Cadastrar</button>
-      </form>
+          <input
+            type="password"
+            className="input"
+            placeholder="Senha"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            className="input"
+            placeholder="Confirme a Senha"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+          {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
+          <button type="submit" className="start-button">Cadastrar</button>
+        </form>
+        <button onClick={onToggleRegister} className="back-button">
+          Voltar para o Login
+        </button>
+      </div>
     </div>
   );
 };
