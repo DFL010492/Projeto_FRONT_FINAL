@@ -21,7 +21,7 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
     if (userExists) {
       setErrorMessage('');
       onLoginSuccess();
-      navigate('/Home');
+      navigate('/BemVindo');
     } else {
       setErrorMessage('Usuário ou senha inválidos');
     }
