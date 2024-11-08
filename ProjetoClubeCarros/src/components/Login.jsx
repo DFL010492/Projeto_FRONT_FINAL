@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { pessoa } from './BancoCadastro';
+import './Login.css';
 
 const Login = ({ onLoginSuccess, onToggleRegister }) => {
   const [username, setUsername] = useState('');
@@ -10,16 +12,17 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    const existingUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const storedUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const allUsers = [...pessoa.usuarios, ...storedUsers]; 
 
-    const userExists = existingUsers.some(
+    const userExists = allUsers.some(
       (user) => user.usuario === username && user.senha === password
     );
 
     if (userExists) {
       setErrorMessage('');
       onLoginSuccess();
-      navigate('/bem-vindo');
+      navigate('/Home');
     } else {
       setErrorMessage('Usuário ou senha inválidos');
     }

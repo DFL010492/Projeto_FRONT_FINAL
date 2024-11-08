@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import './App.css';
 import Login from './components/Login';
 import Cadastro from './components/Cadastro';
-import BemVindo from './components/BemVindo';
+import Home from './components/Home';
 
 function App() {
   const [isRegistered, setIsRegistered] = useState(true);
@@ -27,8 +27,7 @@ function App() {
               )
             }
           />
-          <Route path="/bem-vindo" element={<BemVindo />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/Home" element={<Home />} />
         </Routes>
       </div>
     </Router>

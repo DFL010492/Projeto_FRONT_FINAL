@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { pessoa } from './BancoCadastro';
 
 const Cadastro = ({ onToggleRegister }) => {
   const [name, setName] = useState('');
@@ -22,9 +23,10 @@ const Cadastro = ({ onToggleRegister }) => {
       return;
     }
 
-    const existingUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const storedUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const allUsers = [...pessoa.usuarios, ...storedUsers]; 
 
-    const userExists = existingUsers.some(
+    const userExists = allUsers.some(
       (user) => user.usuario === username || user.email === email
     );
 
@@ -40,7 +42,7 @@ const Cadastro = ({ onToggleRegister }) => {
       email: email,
     };
 
-    const updatedUsers = [...existingUsers, newUser];
+    const updatedUsers = [...storedUsers, newUser];
     localStorage.setItem('usuarios', JSON.stringify(updatedUsers));
 
     setSuccessMessage('Cadastro realizado com sucesso!');
