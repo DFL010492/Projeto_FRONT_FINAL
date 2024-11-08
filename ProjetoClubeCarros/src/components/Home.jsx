@@ -9,11 +9,11 @@ function Home() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item"><a className="nav-link text-white" href="login.html">Login</a></li>
-            <li className="nav-item"><a className="nav-link text-white" href="cadastro.html">Seja Membro</a></li>
-            <li className="nav-item"><a className="nav-link text-white" href="galeria.html">Galeria</a></li>
-            <li className="nav-item"><a className="nav-link text-white" href="reunião.html">Reuniões</a></li>
+          <ul className="navbar-nav">
+            <li className="nav-item"><a className="nav-link" href="login.html">Login</a></li>
+            <li className="nav-item"><a className="nav-link" href="cadastro.html">Seja Membro</a></li>
+            <li className="nav-item"><a className="nav-link" href="galeria.html">Galeria</a></li>
+            <li className="nav-item"><a className="nav-link" href="reunião.html">Reuniões</a></li>
           </ul>
         </div>
       </nav>
