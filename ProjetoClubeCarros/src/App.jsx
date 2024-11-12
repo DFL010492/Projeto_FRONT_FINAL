@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Cadastro from './components/Cadastro';
 import Home from './components/Home';
 import MeuCarro from './components/MeuCarro';
+import Galeria from './components/Galeria';
 
 function App() {
   const [isRegistered, setIsRegistered] = useState(true);
@@ -27,6 +28,7 @@ function App() {
               )}/>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/meucarro" element={<MeuCarro />}></Route>
+          <Route path="/galeria" element={<Galeria />}></Route>
         </Routes>
       </div>
     </Router>

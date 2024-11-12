@@ -1,33 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
-import MeuCarro from './MeuCarro';
-import { Link } from 'react-router-dom';
+import Menu from './Menu';
 
-function Menu() {
-  const [isMenuVisible, setMenuVisible] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuVisible(!isMenuVisible);
-  };
-
-  return (
-    <>
-      <header className="menu-header">
-        <nav className="navbar">
-          <button onClick={toggleMenu} className="menu-button">
-            Menu
-          </button>
-          {isMenuVisible && (
-            <div className="menu-options">
-              <a>Galeria</a>
-              <Link to="/meucarro">Meu Carro</Link>
-            </div>
-          )}
-        </nav>
-      </header>
-    </>
-  );
-}
 
 function UserCard({ image, name, text }) {
   return (
