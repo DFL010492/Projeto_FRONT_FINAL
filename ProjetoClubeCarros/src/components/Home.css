@@ -10,7 +10,7 @@
 .Title {
     padding: 10px;
     text-align: center;
-    font-size: 10px;
+    font-size: 50px;
     font-family: "Bebas Neue", sans-serif;
     background-color: black;
     }
@@ -39,13 +39,13 @@
   height: 100%;
   position: relative;
   animation-name: Animation;
-  animation-duration: 8s ;
+  animation-duration: 17s ;
  }
 
 
  @keyframes Animation {
-  0%   { left:0px; top:0px;}
-  25%  { left:3000px; top:0px;}
+  0%   { left:3000px; top:0px;}
+  25%  { left:0px; top:0px;}
   100% { left:0; top:0px;}
 }
 
@@ -74,11 +74,11 @@
 }
 
 .Move{
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-name: Move;
 }
 
 @keyframes Move{
-  0%{transform: scale(0.5);}
+  0%{transform: scale(0.25);}
   100%{transform: scale(1.0);}
 }
