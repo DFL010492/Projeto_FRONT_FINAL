@@ -13,6 +13,7 @@ function Menu() {
   return (
     <>
       <header className="menu-header">
+       
         <nav className="navbar">
           <button onClick={toggleMenu} className="menu-button">
             Menu
@@ -24,6 +25,21 @@ function Menu() {
             </div>
           )}
         </nav>
+
+<div className="Title">
+
+<h1 className="Move">Clube OverHaulinBrasilia</h1>
+
+                <div className="Animation">
+
+                <img src="/src/assets/Carro.png" alt="Carro" />
+
+                </div>
+
+
+</div>
+      
+        
       </header>
     </>
   );
