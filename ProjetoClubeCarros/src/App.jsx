@@ -25,15 +25,10 @@ function App() {
                 <Login onLoginSuccess={handleLoginSuccess} onToggleRegister={() => setIsRegistered(false)} />
               ) : (
                 <Cadastro onToggleRegister={() => setIsRegistered(true)} />
-              )
-            }
-          />
-<<<<<<<<< Temporary merge branch 1
-          <Route path="/Home" element={<Home />} />
-=========
-          <Route path="/BemVindo" element={<BemVindo />} />
->>>>>>>>> Temporary merge branch 2
-          <Route path="*" element={<Navigate to="/" />} />
+              )}/>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/meucarro" element={<MeuCarro />}></Route>
+          <Route path="/galeria" element={<Galeria />}></Route>
         </Routes>
       </div>
     </Router>

@@ -5,27 +5,12 @@ import Menu from './Menu';
 
 function UserCard({ image, name, text }) {
   return (
-<<<<<<< HEAD
-    <div className="body text-white">
-      <nav className="navbar navbar-collapse-md navbar-dark bg-black">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item"><a className="nav-link" href="login.html">Login</a></li>
-            <li className="nav-item"><a className="nav-link" href="cadastro.html">Seja Membro</a></li>
-            <li className="nav-item"><a className="nav-link" href="galeria.html">Galeria</a></li>
-            <li className="nav-item"><a className="nav-link" href="reunião.html">Reuniões</a></li>
-          </ul>
-=======
     <div>
       <div>
         <img src={image}/>
         <div>
           <h5>{name}</h5>
           <p>{text}</p>
->>>>>>> origin/main
         </div>
       </div>
     </div>
