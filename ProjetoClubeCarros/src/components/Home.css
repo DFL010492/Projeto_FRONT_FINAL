@@ -1,7 +1,10 @@
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.menu-header {
+  background-color: #333;
+  color: white;
+  padding: auto;
+  position: auto;
+  top: 0;
+  width: 100%;
 }
 
 .header {
@@ -21,9 +24,10 @@
   font-family: "Bebas Neue", sans-serif;
  }
 
- p{
-  font-size: 23px;
- }
+.menu-options {
+  display: flex;
+  gap: 15px;
+}
 
  h5{
   font-size: 30px;
@@ -40,8 +44,46 @@
   animation-duration: 4s;
  }
 
+
  @keyframes example {
   0%   { left:0px; top:0px;}
   25%  { left:3000px; top:0px;}
   100% { left:0; top:0px;}
+}
+
+.menu-header {
+  background-color: #333;
+  color: white;
+  padding: auto;
+  position: auto;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-options {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
 }
