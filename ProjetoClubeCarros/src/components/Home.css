@@ -1,0 +1,205 @@
+/* CSS no Menu */
+.menu-header {
+  background-color: #333;
+  color: white;
+  padding: auto;
+  position: auto;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-options {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Css da galeria */
+.galeria-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.galeria-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.05);
+}
+
+.galeria-container {
+  padding: 20px;
+}
+.galeria-imagens img {
+  display: inline-block;
+  width: 150px;
+  margin: 10px;
+}
+
+/* CSS do MeuCarro */
+/* Estilização principal do container */
+.meus-carros-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Título */
+.meus-carros-container h2 {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilização do formulário */
+.carro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.carro-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Campos de entrada */
+.carro-form input[type="text"],
+.carro-form input[type="number"],
+.carro-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.carro-form input[type="text"]:focus,
+.carro-form input[type="number"]:focus,
+.carro-form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Campo de upload de imagens */
+.carro-form input[type="file"] {
+  margin-bottom: 20px;
+}
+
+/* Botões */
+.carro-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carro-form button[type="submit"] {
+  background-color: #4a90e2;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.carro-form button[type="submit"]:hover {
+  background-color: #357ABD;
+}
+
+.carro-form button[type="button"] {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.carro-form button[type="button"]:hover {
+  background-color: #c0392b;
+}
+
+/* Mensagem de confirmação */
+.confirmation-message {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e1f5fe;
+  color: #2c3e50;
+}
+
+.confirmation-message h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilização das imagens */
+.confirmation-message div img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.confirmation-message div img:hover {
+  transform: scale(1.1);
+}
+
+/* Layout Responsivo */
+@media (max-width: 768px) {
+  .meus-carros-container {
+    padding: 15px;
+  }
+
+  .carro-form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
