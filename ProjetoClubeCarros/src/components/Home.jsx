@@ -1,7 +1,49 @@
 import React, { useState } from 'react';
 import './Home.css';
-import Menu from './Menu';
+import MeuCarro from './MeuCarro';
+import { Link } from 'react-router-dom';
 
+function Menu() {
+  const [isMenuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!isMenuVisible);
+  };
+
+  return (
+    <>
+      <header className="menu-header">
+       
+        <nav className="navbar">
+          <button onClick={toggleMenu} className="menu-button">
+            Menu
+          </button>
+          {isMenuVisible && (
+            <div className="menu-options">
+              <a>Galeria</a>
+              <Link to="/meucarro">Meu Carro</Link>
+            </div>
+          )}
+        </nav>
+
+<div className="Title">
+
+<h1 className="Move">Clube OverHaulinBrasilia</h1>
+
+                <div className="Animation">
+
+                <img src="/src/assets/Carro.png" alt="Carro" />
+
+                </div>
+
+
+</div>
+      
+        
+      </header>
+    </>
+  );
+}
 
 function UserCard({ image, name, text }) {
   return (
@@ -94,22 +136,22 @@ function Home() {
           <h2>Usuários Antigos</h2>
           <div className="row">
             <UserCard
-              image="https://images.pexels.com/photos/5471745/pexels-photo-5471745.jpeg?auto=compress&cs=tinysrgb&w=600"
+              image="https://images.pexels.com/photos/5471745/pexels-photo-5471745.jpeg?auto=compress&cs=tinysrgb&w=1200"
               name="Artamiel Antares Rock"
               text="Comunidade ligada em todos os tipos de Carros e com as melhores automações de Brasília nunca vi um site tão completo e feito com todo o #ROCK N ROLL!"
             />
             <UserCard
-              image="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=600"
+              image="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1200"
               name="Dudu Duramento Durales"
               text="Uma gama de oportunidades de automações que podem ter nesse lugar já consegui empregar todos os meus filhos nesses novos Projetos #MecanicaPorAmor!"
             />
             <UserCard
-              image="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=600"
+              image="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=1200"
               name="Manoel Maonaroda Nogueira"
               text="UM XOQUE DE MAQUINAS MORTIFERAS nunca tinha vista tanto carinho de uma comunidade tao GRANDE meu primo Dudu trabalhou na primeira Amostra e desde então NAO PERCO UMA #FUSQUINHAELETRICO"
             />
             <UserCard
-              image="https://images.pexels.com/photos/4489762/pexels-photo-4489762.jpeg?auto=compress&cs=tinysrgb&w=600"
+              image="https://images.pexels.com/photos/4489762/pexels-photo-4489762.jpeg?auto=compress&cs=tinysrgb&w=1200"
               name="Arthur Bigode Silva"
               text="Eu e meu bigode adoramos o clube! Sempre pego meu Ford Mustang e compareço às amostras anuais acompanhado pela minha filha Bigorndina Silva! #BigodesTunados"
             />

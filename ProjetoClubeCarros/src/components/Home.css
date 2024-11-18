@@ -1,3 +1,22 @@
+.menu-header {
+  background-color: #333;
+  color: white;
+  padding: auto;
+  position: auto;
+  top: 0;
+  width: 100%;
+}
+
+.Title {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: black;
+    }
+
+ body{
+  background-color: rgb(0, 0, 0);
 /* CSS no Menu */
 .menu-header {
   background-color: #333;
@@ -171,6 +190,73 @@
 
 .confirmation-message h3 {
   margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+ }
+
+
+
+.menu-options {
+  display: flex;
+  gap: 15px;
+}
+
+ h5{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+ }
+ a{
+  font-size: x-large;
+ }
+
+ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.Move{
+  animation-duration: 1s;
+  animation-name: Move;
+}
+
+@keyframes Move{
+  0%{transform: scale(0.25);}
+  100%{transform: scale(1.0);}
+}
+
+.Animation{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: Animation;
+  animation-duration: 17s ;
+ }
+
+
+ @keyframes Animation {
+  0%   { left:3000px; top:0px;}
+  25%  { left:0px; top:0px;}
+  100% { left:0; top:0px;}
+}
   font-size: 20px;
   color: #4a90e2;
   text-align: center;
