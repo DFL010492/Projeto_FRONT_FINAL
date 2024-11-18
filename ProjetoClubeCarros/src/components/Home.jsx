@@ -1,49 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
-import MeuCarro from './MeuCarro';
+import Menu from './Menu';
 import { Link } from 'react-router-dom';
-
-function Menu() {
-  const [isMenuVisible, setMenuVisible] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuVisible(!isMenuVisible);
-  };
-
-  return (
-    <>
-      <header className="menu-header">
-       
-        <nav className="navbar">
-          <button onClick={toggleMenu} className="menu-button">
-            Menu
-          </button>
-          {isMenuVisible && (
-            <div className="menu-options">
-              <a>Galeria</a>
-              <Link to="/meucarro">Meu Carro</Link>
-            </div>
-          )}
-        </nav>
-
-<div className="Title">
-
-<h1 className="Move">Clube OverHaulinBrasilia</h1>
-
-                <div className="Animation">
-
-                <img src="/src/assets/Carro.png" alt="Carro" />
-
-                </div>
-
-
-</div>
-      
-        
-      </header>
-    </>
-  );
-}
 
 function UserCard({ image, name, text }) {
   return (
@@ -80,6 +38,12 @@ function Home() {
     <>
       <div>
         <Menu />
+        <div className="Title">
+          <h1 className="Move">Clube OverHaulinBrasilia</h1>
+          <div className="Animation">
+            <img src="/src/assets/Carro.png" alt="Carro" />
+          </div>
+        </div>
         <h2>Entre para o Maior Clube de Brasília!</h2>
         <p>
         Se você é um verdadeiro entusiasta de carros, 
