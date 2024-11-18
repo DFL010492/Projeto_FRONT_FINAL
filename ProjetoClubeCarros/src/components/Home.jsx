@@ -72,7 +72,7 @@ function Home() {
         </p>
       </div>
       <div>
-        <h2>Objetivo</h2>
+        <h2>Objetivos</h2>
         <p>
         O Clube OverHaulin Brasília, ao transcender as fronteiras do mero agrupamento de entusiastas de carros modificados, 
         estabelece como seu objetivo principal a promoção da comunhão entre apaixonados pela cultura automotiva. 
