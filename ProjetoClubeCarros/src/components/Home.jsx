@@ -52,7 +52,7 @@ function Home() {
         a paixão pela velocidade e pelo estilo se encontram para criar uma experiência única e emocionante.
         </p>
       </div>
-      <div>
+      <div className='informaçoes'>
         <h2>Sobre nosso Clube</h2>
         <p>
         Somos uma comunidade apaixonada que se reúne em torno da paixão por veículos customizados e potentes. 
@@ -71,7 +71,7 @@ function Home() {
         inovação e paixão pela cultura automotiva.
         </p>
       </div>
-      <div>
+      <div className='objetivos'>
         <h2>Objetivos</h2>
         <p>
         O Clube OverHaulin Brasília, ao transcender as fronteiras do mero agrupamento de entusiastas de carros modificados, 
@@ -96,8 +96,8 @@ function Home() {
         </p>
       </div>
       <section>
+        <h2>Usuários Antigos</h2>
         <div className="container">
-          <h2>Usuários Antigos</h2>
           <div className="row">
             <UserCard
               image="https://images.pexels.com/photos/5471745/pexels-photo-5471745.jpeg?auto=compress&cs=tinysrgb&w=1200"
