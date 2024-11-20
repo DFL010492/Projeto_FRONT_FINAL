@@ -31,7 +31,7 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
   return (
     <div className="container">
       <div className="inicio">
-        <h2>Login</h2>
+      <h2 id="login">Login</h2>
         <form onSubmit={handleLogin}>
           <input
             type="text"
