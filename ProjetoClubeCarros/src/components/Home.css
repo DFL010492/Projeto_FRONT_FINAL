@@ -1,3 +1,5 @@
+*{}
+
 .menu-header {
   background-color: #333;
   color: white;
@@ -78,7 +80,7 @@
   animation-name: Animation;
   animation-duration: 17s ;
  }
-.galeria-item img {
+ .galeria-item img {
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -152,7 +154,7 @@
   0%   { left:3000px; top:0px;}
   25%  { left:0px; top:0px;}
   100% { left:0; top:0px;}
-/* Campo de upload de imagens */
+  /* Campo de upload de imagens */
  }
  .carro-form input[type="file"] {
   margin-bottom: 20px;
@@ -236,3 +238,5 @@
     margin-bottom: 10px;
   }
 }
+
+

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import Menu from './Menu';
-import { Link } from 'react-router-dom';
+
 
 function UserCard({ image, name, text }) {
   return (
@@ -46,6 +46,26 @@ function Home() {
         </div>
         <h2>Entre para o Maior Clube de Brasília!</h2>
         <p>
+        Se você é um verdadeiro entusiasta de carros, 
+        não pode deixar de conhecer o OverHaulin - 
+        o clube definitivo para os amantes de carros modificados! Aqui, 
+        a paixão pela velocidade e pelo estilo se encontram para criar uma experiência única e emocionante.
+        Se você é um verdadeiro entusiasta de carros, 
+        não pode deixar de conhecer o OverHaulin - 
+        o clube definitivo para os amantes de carros modificados! Aqui, 
+        a paixão pela velocidade e pelo estilo se encontram para criar uma experiência única e emocionante.
+        Se você é um verdadeiro entusiasta de carros, 
+        não pode deixar de conhecer o OverHaulin - 
+        o clube definitivo para os amantes de carros modificados! Aqui, 
+        a paixão pela velocidade e pelo estilo se encontram para criar uma experiência única e emocionante.
+        Se você é um verdadeiro entusiasta de carros, 
+        não pode deixar de conhecer o OverHaulin - 
+        o clube definitivo para os amantes de carros modificados! Aqui, 
+        a paixão pela velocidade e pelo estilo se encontram para criar uma experiência única e emocionante.
+        Se você é um verdadeiro entusiasta de carros, 
+        não pode deixar de conhecer o OverHaulin - 
+        o clube definitivo para os amantes de carros modificados! Aqui, 
+        a paixão pela velocidade e pelo estilo se encontram para criar uma experiência única e emocionante.
         Se você é um verdadeiro entusiasta de carros, 
         não pode deixar de conhecer o OverHaulin - 
         o clube definitivo para os amantes de carros modificados! Aqui, 
