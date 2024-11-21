@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 48%, rgba(173,173,173,1) 100%);
   }
   
   .inicio {
