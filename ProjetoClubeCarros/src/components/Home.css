@@ -314,3 +314,38 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
+
+/*CSS da Galeria*/
+.galeria-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.galeria-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria-imagem {
+  width: 150px; /* Largura fixa */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+  margin: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: contain; /* Garante que a imagem seja redimensionada mantendo a proporção */
+}
+
+.galeria-imagem:hover {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  z-index: 1000;
+}
