@@ -111,6 +111,15 @@ body {
   margin: 10px;
 }
 
+.footer {
+  text-align: center;
+  padding: 10px; 
+  background-color: #000000; 
+  font-size: 14px; 
+  color: #ffffff; /* Opcional: Ajusta a cor do texto */
+}
+
+
 /* CSS do MeuCarro */
 /* Estilização principal do container */
 .container {

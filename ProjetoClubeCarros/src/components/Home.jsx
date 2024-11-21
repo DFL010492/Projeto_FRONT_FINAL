@@ -26,12 +26,12 @@ function Footer() {
         <p><i></i> Telefone - (61) 87371-189</p>
         <p><i></i> <a href="https://github.com/DFL010492/Projeto_FRONT_FINAL">GitHub</a></p>
       </section>
-      <footer>
+      <footer className="footer">
         <div>&copy; 2024 Clube OverHaulinBrasilia. Todos os direitos reservados.</div>
       </footer>
     </main>
   );
-};
+}
 
 function Home() {
   return (
