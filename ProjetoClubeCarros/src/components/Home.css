@@ -1,4 +1,9 @@
-*{}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .menu-header {
   background-color: #333;
