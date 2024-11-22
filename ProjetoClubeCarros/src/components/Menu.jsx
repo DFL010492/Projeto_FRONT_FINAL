@@ -13,7 +13,7 @@ function Menu() {
     <header className="menu-header">
       <nav className="navbar">
         <button onClick={toggleMenu} className="menu-button">
-          Menu
+          ☰
         </button>
         {isMenuVisible && (
           <div className="menu-options">
@@ -21,6 +21,8 @@ function Menu() {
             <Link to="/galeria">Galeria</Link>
             <Link to="/meucarro">Meu Carro</Link>
           </div>
+
+          
         )}
       </nav>
     </header>
