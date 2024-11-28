@@ -60,13 +60,6 @@ function App() {
             element={<ProtectedRoute element={<Galeria />} />}
           />
         </Routes>
-
-        {/* Botão de Logout */}
-        {isAuthenticated && (
-          <button onClick={handleLogout} style={{ marginTop: '20px' }}>
-            Sair
-          </button>
-        )}
       </div>
     </Router>
   );
