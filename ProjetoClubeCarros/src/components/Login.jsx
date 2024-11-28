@@ -13,7 +13,7 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
     e.preventDefault();
 
     const storedUsers = JSON.parse(localStorage.getItem('usuarios')) || [];
-    const allUsers = [...pessoa.usuarios, ...storedUsers]; 
+    const allUsers = [...pessoa.usuarios, ...storedUsers];
 
     const userExists = allUsers.some(
       (user) => user.usuario === username && user.senha === password
@@ -21,8 +21,8 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
 
     if (userExists) {
       setErrorMessage('');
-      onLoginSuccess();
-      navigate('/Home');
+      onLoginSuccess(); // Define o estado autenticado
+      navigate('/home'); // Redireciona para Home
     } else {
       setErrorMessage('Usuário ou senha inválidos');
     }
@@ -31,7 +31,7 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
   return (
     <div className="container">
       <div className="inicio">
-      <h2 id="login">Login</h2>
+        <h2 id="login">Login</h2>
         <form onSubmit={handleLogin}>
           <input
             type="text"
@@ -50,7 +50,9 @@ const Login = ({ onLoginSuccess, onToggleRegister }) => {
             required
           />
           {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-          <button type="submit" className="start-button">Entrar</button>
+          <button type="submit" className="start-button">
+            Entrar
+          </button>
         </form>
         <button onClick={onToggleRegister} className="register-button">
           Cadastrar-se

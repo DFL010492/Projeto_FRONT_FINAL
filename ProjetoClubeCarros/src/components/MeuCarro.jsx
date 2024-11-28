@@ -23,7 +23,7 @@ function MeuCarro() {
     setSubmitted(true);
   };
 
-  const handleImageUpload = (e) => {
+  const handleImageUpload = (e) => { 
     const files = Array.from(e.target.files);
     const newImages = [];
 
@@ -36,7 +36,7 @@ function MeuCarro() {
       reader.readAsDataURL(file);
     });
   };
-
+ 
   const handleReset = () => {
     setCarro('');
     setAno('');

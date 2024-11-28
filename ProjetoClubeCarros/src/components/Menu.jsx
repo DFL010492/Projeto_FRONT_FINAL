@@ -20,6 +20,7 @@ function Menu() {
             <Link to="/home">Home</Link>
             <Link to="/galeria">Galeria</Link>
             <Link to="/meucarro">Meu Carro</Link>
+            <Link to="/"> Logout</Link>
           </div>
         )}
       </nav>
